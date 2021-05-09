@@ -1,5 +1,6 @@
 resource "random_string" "lambda_name" {
-  length = 16
+  length  = 16
+  special = false
 }
 
 locals {
