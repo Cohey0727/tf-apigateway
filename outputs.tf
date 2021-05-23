@@ -22,14 +22,3 @@ output "api_gateway_tags_all" {
   value       = aws_api_gateway_rest_api.rest_api.tags_all
   description = "A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block."
 }
-
-output "api_gateway_resource_id" {
-  value       = aws_api_gateway_resource.proxy.id
-  description = "The resource's identifier."
-
-}
-output "api_gateway_resource_path" {
-  value       = aws_api_gateway_resource.proxy.path
-  description = "The complete path for this API resource, including all parent paths."
-
-}
